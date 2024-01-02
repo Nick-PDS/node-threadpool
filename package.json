@@ -28,14 +28,11 @@
     "build": "npm-run-all build:*",
     "build:lib": "rollup -c lib/rollup.config.js --environment BUILD:production",
     "build:types": "cpx lib/**/*.d.ts dist",
-    "build:doc": "vuepress build docs && cpx docs/*.html dist/docs",
-    "build:apidoc": "typedoc --includeDeclarations --excludeExternals --out dist/docs/api",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "precommit": "pretty-quick --staged",
     "dev": "npm-run-all --parallel dev:*",
     "dev:lib": "rollup -c lib/rollup.config.js -w",
     "dev:ava": "cross-env NODE_OPTIONS=--experimental-worker ava --watch",
-    "dev:doc": "vuepress dev docs",
     "test": "cross-env NODE_OPTIONS=--experimental-worker nyc ava",
     "test:report": "nyc report --reporter=cobertura",
     "semantic-release": "semantic-release"
@@ -66,10 +63,7 @@
     "ts-node": "^7.0.0",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
-    "typedoc": "^0.11.1",
-    "typedoc-plugin-external-module-name": "^1.1.1",
-    "typescript": "^2.9.2",
-    "vuepress": "^0.10.2"
+    "typescript": "^2.9.2"
   },
   "ava": {
     "files": [
