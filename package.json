@@ -17,7 +17,7 @@
   "module": "dist/lib/node-threadpool.es.js",
   "jsnext:main": "dist/lib/node-threadpool.es.js",
   "types": "dist/lib/index.d.ts",
-  "repository": "https://github.com/psastras/node-threadpool.git",
+  "repository": "https://github.com/Nick-PDS/node-threadpool.git",
   "author": "Paul Sastrasinh <psastras@gmail.com>",
   "license": "MIT",
   "homepage": "https://psastras.github.io/node-threadpool/",
